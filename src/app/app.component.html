@@ -1,0 +1,18 @@
+<nav class="navbar navbar-dark bg-primary navbar-expand-sm ">
+	<div class="container-fluid">
+		<ul class="navbar-nav">
+			<li routerLinkActive="nav-item active"><a class="nav-link" [routerLink]="['auth']">Authentification</a></li>
+			<li routerLinkActive="nav-item active"><a class="nav-link" [routerLink]="['appareils']">Appareils</a></li>
+			<li routerLinkActive="nav-item active"><a class="nav-link" [routerLink]="['edit']">Nouvel appareil</a></li>
+			<li routerLinkActive="nav-item active"><a class="nav-link" [routerLink]="['users']">Utilisateurs</a></li>
+		</ul>
+		<div class="navbar-right">
+			<p>Vous êtes connecté depuis {{ secondes }} secondes !</p>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row">
+		<router-outlet></router-outlet>
+	</div>
+</div>
